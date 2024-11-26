@@ -2,7 +2,6 @@ import SelectLottery from "./SelectLottery";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { LotteryResult } from "../types/lotteryTypes";
-import '../styles/LotteryResults.scss'
 
 
 interface LotteryResultsProps{

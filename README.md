@@ -1,50 +1,76 @@
-# React + TypeScript + Vite
+# Resultado Loteria (desafio Front-End Challenges)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+Este é um projeto desenvolvido para mostrar os Resultados das Loterias de forma dinâmica. Ao selecionar um sorteio, o layout e as informações do sorteio seram exibidas em tempo real, proporcionando uma experiência intuitiva e responsiva para o usuário.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Sorteio Desktop
 
-## Expanding the ESLint configuration
+![Sorteio Desktop](./public/Sorteio%20Desktop.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Sorteio Mobile
 
-- Configure the top-level `parserOptions` property like this:
+![Sorteio Mobile](./public/Sorteio%20Mobile.png)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Tecnologias Utilizadas
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **React**
+- **TypeScript** (para maior robustez e segurança no desenvolvimento do código)
+- **Sass** (para estilização flexível e modular do layout dinâmico)
+- **Axios** (Para realizar requisições API REST e obter os resultados dos sorteios)
+- **Vite** (para o ambiente de desenvolvimento)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🖥️ Funcionalidades
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+**Seleção Dinâmica de Loterias**: Alteração do tipo de sorteio pelo combo-box(select), atualizado automaticamente o layout e as informações exibidas.
+
+**Consumo de API REST**: Obtenção de dados atualizados dos resultados de loterias usando Axios.
+
+**Estilização Responsiva**: Layouts estilizados com Sass, adaptando-se para diferentes dispositivos.
+
+**Componentização**: Organização do projeto em componentes reutilizáveis.
+
+## 📋 Aprendizados
+
+Durante o desenvolvimento deste projeto, foram abordados:
+
+**TypeScript**: Criação de um código mais seguro e escalável utilizando tipos e interfaces.
+
+**Consumo de API**: Utilização do Axios para requisição e obtenção dos dados de forma dinâmica para exibição.
+
+**Estilização Modular**: Uso do Sass para criar temas e layouts dinâmicos baseados no tipo de loteria selecionado.
+
+## Instalação
+
+## Pré-requisitos
+
+- **Node.js** (você pode verificar se está instalado usando node -v)
+- **npm ou yarn** para gerenciar dependências.
+
+## Passo a passo
+
+1. Clone o repositório:
+
+2. Navegue até o diretório do projeto:
+
+cd ecommerce-app
+
+3. Instale as dependências:
+
+npm install
+
+# ou
+
+yarn install
+
+4. Execute o projeto:
+
+npm run dev
+
+# ou
+
+yarn dev
+O projeto estará disponível em http://localhost:5173.
+
+Licença
+Este projeto está licenciado sob a MIT License.
