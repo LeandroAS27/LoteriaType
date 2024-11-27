@@ -14,6 +14,7 @@ const LotteryResults: React.FC<LotteryResultsProps> = ({selectedLottery, onLotte
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
 
+
     useEffect(() => {
 
         if(!selectedLottery) return;

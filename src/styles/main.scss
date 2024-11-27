@@ -157,6 +157,8 @@ body{
 
     .lottery-header{
         flex-direction: column;
+        margin: 2rem;
+        width: 100%;
     }
 
     .lottery-text{
@@ -181,5 +183,9 @@ body{
         height: 140%;
         top: 65%;
         transform: translate(-29%, -50%);
+    }
+    
+    .number-circle{
+        padding: 1.5rem;
     }
 }
