@@ -10,5 +10,11 @@
         @media screen and (max-width: 768px){
             @content;
         }
+    }@else{
+        @if $breakpoint == mobileSM {
+            @media screen and (max-width:320px) {
+                @content
+            }
+        }
     }
 }
